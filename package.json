@@ -1,0 +1,24 @@
+{
+  "name": "anime-name-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20.12.7",
+    "chalk": "4.1.2",
+    "esbuild": "0.20.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "aniep": "^0.6.0",
+    "chinese-parseint2": "^2.0.6",
+    "lodash": "^4.17.21"
+  }
+}
