@@ -1,9 +1,9 @@
 import chalk from "chalk";
-import { parser } from "../src/parser/parser";
+import { parseFileName } from "../src/parser/parser";
 import { getRandomData } from "./data/getter";
 
 getRandomData().forEach((fileName) => {
-  const result = parser(fileName);
+  const result = parseFileName(fileName);
 
   let display = fileName;
   if (result.groupIndex !== null) {

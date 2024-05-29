@@ -4,7 +4,6 @@ import chineseParseInt from "chinese-parseint2";
 import { groupMap } from "../map/group";
 import { ParseResult } from "../result/result";
 import { findAniEpIndex } from "./findAniEpIndex";
-import chalk from "chalk";
 import path from "path/posix";
 import { extensionMap } from "../map/format";
 import { broadcastChannelMap, mediaTypeMap } from "../map/source";
@@ -28,7 +27,7 @@ import { languageMap, subtitleFeaturesMap } from "../map/subtitle";
  * Watashi ni Tenshi ga Maiorita! 04 [0067B767].mp4
  * 解析如以上的文件名到 ParseResult
  */
-export function parser(fileName: string) {
+export function parseFileName(fileName: string) {
   if (typeof fileName !== "string") throw new Error("fileName must be string");
   fileName = fileName.trim();
 

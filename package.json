@@ -1,14 +1,22 @@
 {
   "name": "anime-name-tool",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple parser for japanese anime names.",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "anime",
+    "parser",
+    "japanese"
+  ],
+  "author": "MagmaBlock",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MagmaBlock/AnimeNameTool.git"
+  },
   "devDependencies": {
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.12.7",
