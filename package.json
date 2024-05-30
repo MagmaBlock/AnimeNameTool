@@ -2,9 +2,20 @@
   "name": "anime-name-tool",
   "version": "1.0.0",
   "description": "A simple parser for japanese anime names.",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
   },
   "keywords": [
     "anime",
@@ -21,8 +32,8 @@
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.12.7",
     "chalk": "4.1.2",
-    "esbuild": "0.20.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
   },
   "dependencies": {
     "aniep": "^0.6.0",
