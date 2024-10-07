@@ -4,7 +4,7 @@ import chineseParseInt from "chinese-parseint2";
 import { groupMap } from "../map/group";
 import { ParseResult } from "../result/result";
 import { findAniEpIndex } from "./findAniEpIndex";
-import path from "path/posix";
+import path from "pathe";
 import { extensionMap } from "../map/format";
 import { broadcastChannelMap, mediaTypeMap } from "../map/source";
 import {
